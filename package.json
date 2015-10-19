@@ -1,0 +1,25 @@
+{
+  "name": "simpleisomorphic",
+  "version": "1.0.0",
+  "clean": "rm -rf lib",
+  "watch-js": "./node_modules/.bin/babel src -d lib --experimental -w",
+  "dev-server": "node lib/server/webpack",
+  "server": "nodemon lib/server/server",
+  "start": "npm run watch-js & npm run dev-server & npm run server",
+  "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental",
+  "description": "isomorphing power rangers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wensontsai/simpleisomorphic.git"
+  },
+  "author": "wenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wensontsai/simpleisomorphic/issues"
+  },
+  "homepage": "https://github.com/wensontsai/simpleisomorphic"
+}
